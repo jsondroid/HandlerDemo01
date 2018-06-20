@@ -13,6 +13,12 @@ public class MainHandler {
 
 
     private MainHandler() {
+        /**
+         * Looper.getMainLooper() 表示在主线程下运行
+         *
+         * Looper.myLooper() 表示在当前线程
+         *
+         * */
         mHandler = new Handler(Looper.getMainLooper());
     }
 
